@@ -84,20 +84,109 @@
 # __ we can make any attribute private by putting two underscores in it
 
 #  Inheritance
-class Car:
-    @staticmethod
-    def start():
-        print("car started..")
+# class Car:
+#     @staticmethod
+#     def start():
+#         print("car started..")
 
-    @staticmethod
-    def stop():
-        print("car stoppped..")
+#     @staticmethod
+#     def stop():
+#         print("car stoppped..")
 
-class ToyotaCar(Car):
-    def __init__(self, name):
-        self.name = name
+# class ToyotaCar(Car):
+#     def __init__(self, name):
+#         self.name = name
 
-car1 = ToyotaCar("Fortuner")
-car2 = ToyotaCar("Prius")
+# car1 = ToyotaCar("Fortuner")
+# car2 = ToyotaCar("Prius")
 
-car1.start() 
+# car1.start()
+
+# classmethod
+
+# class Person:
+#     name = "anonymous"
+
+#     # def changeName(self, name):
+#     #     self.__class__.name = name
+
+#     @classmethod
+#     def changeName(cls, name):
+#         cls.name = name
+
+# p1 = Person()
+# p1.changeName("Rahul")
+# print(p1.name)
+# print(Person.name)
+
+
+# class Student:
+#     def __init__(self, phy, chem, math):
+#         self.phy = phy
+#         self.chem = chem
+#         self.math = math
+
+    # def claPercentage(self):
+    #     self.percentage = str((self.phy+self.chem+self.math)/3) + "%"
+    #     return self.percentage
+
+#     @property
+#     def percentage(self):
+#         return str((self.phy+self.chem+self.math)/3) + "%"
+
+# s1 = Student(98,93,91)
+# print(s1.percentage)
+
+# s1.phy = 88
+# print(s1.percentage)
+
+# # s1.claPercentage()
+# print(s1.claPercentage())
+ 
+
+#  polyphormism
+# operator overloading
+  
+# def add(a, b):
+     
+#     """
+#     Adds two numbers and returns the result.
+    
+#     Parameters:
+#     a (int, float): The first number.
+#     b (int, float): The second number.
+    
+#     Returns:
+#     int, float: The sum of a and b.
+#     """
+#     return a+b
+
+# print(add.__doc__)
+
+# import sys
+# # print(sys.__dict__.keys())
+
+# print(sys.ps1)
+
+
+# a = 15
+ 
+ 
+# # function to change a global value
+# def change():
+#     # increment value of a by 5
+#     a = 5
+#     print(a)
+
+# change()
+# print(a) 
+
+# def myfunc1():
+#   x = "John"
+#   def myfunc2():
+#     x = "hello"
+#   myfunc2()
+#   return x
+
+# print(myfunc1())
+
